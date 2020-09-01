@@ -1,0 +1,15 @@
+<h1>Search: <small>{{text}}</small></h1>
+<hr>
+
+<div class="alert alert-danger" role="alert" *ngIf="objetos.length == 0">
+    No results for: {{text}}
+  </div>
+
+<br>
+
+<div class="card-columns">
+
+    <app-objeto-card [objeto]="obj"
+    *ngFor="let obj of objetos; let i = index"></app-objeto-card>
+
+</div>

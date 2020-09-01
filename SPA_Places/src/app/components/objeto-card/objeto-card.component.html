@@ -1,0 +1,14 @@
+<div class="card">
+    <img [src]="objeto.img" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">{{objeto.name}} </h5>
+        <p class="card-text">{{objeto.brief}}</p>
+        <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+
+
+        <button type="button" (click)="showObject()" class="btn btn-outline-primary btn-block">
+            Ver más...
+        </button>
+
+    </div>
+</div>
